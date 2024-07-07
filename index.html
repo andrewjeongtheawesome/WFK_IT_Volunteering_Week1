@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="resource/logo.png" alt="KIV Logo" id="logo">
+    </header>
+    <div class="container">
+        <h1>ASL Training Web</h1>
+        <div id="main-content">
+            <div class="box">
+                <h3>Current Word</h3>
+                <div id="question-container">
+                    <h2 id="current-letter">A</h2>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Your Handsign</h3>
+                <div id="webcam-container">
+                    <button type="button" onclick="toggleWebcam()">Start Webcam</button>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="stop-btn" onclick="stopWebcam()">Stop</button>
+            <button id="skip-btn" onclick="skipQuestion()">Skip</button>
+        </div>
+    </div>
+    <div id="label-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

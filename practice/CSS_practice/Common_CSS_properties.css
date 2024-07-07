@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0ee2a6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.description {
+    color: blue;
+    background-color: lightyellow;
+}
+
+.text-sample {
+    font-size: 24px;
+    text-align: center;
+}
+
+.box-model {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: lightgreen;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Learning Web Application</title>
+    <link rel="stylesheet" href="mission3.css">
+</head>
+<body>
+    <header>
+        <img src="../../resource/logo.png" alt="KIV Logo" id="kiv-logo">
+        <h1>ASL Training Web</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="current-word-section">
+            <h3>Current Word</h3>
+            <h2 id="current-letter">A</h2>
+        </div>
+        <div class="section" id="handsign-section">
+            <h3>Your Handsign</h3>
+            <div id="webcam-container">
+                <button id="start-btn" onclick="toggleWebcam()">Start Webcam</button>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="stop-btn" onclick="stopWebcam()">Stop</button>
+        <button id="skip-btn" onclick="skipQuestion()">Skip</button>
+    </div>
+    <div id="label-container" style="display: none;"></div> <!-- Hidden accuracy container -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="mission3.js"></script>
+</body>
+</html>
